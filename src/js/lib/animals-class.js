@@ -9,12 +9,12 @@ class Animals {
     let output;
 
     if (!input.includes(" ") && input.length > 0) {
-      output = input + " " + "<i>" + this.sound + "</i>";
+      output = `${input} <i>${this.sound}</i>`;
     } else {
       let inputArray = input.split(" ");
 
       inputArray.forEach((word, index) => {
-        inputArray[index] = word + " " + "<i>" + this.sound + "</i>";
+        inputArray[index] = `${word} <i>${this.sound}</i>`;
       });
       output = inputArray.join(" ");
     }

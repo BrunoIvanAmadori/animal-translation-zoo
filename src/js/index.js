@@ -33,8 +33,9 @@ function getSelectedAnimalFrom(url) {
   let selectedAnimal;
 
   if (url) {
+    let urlParams = new URLSearchParams(url);
     for (let i = 0; i < animals.length; i++) {
-      if (url == "?animals=" + animals[i].name) {
+      if (urlParams.get("animals") == animals[i].name) {
         selectedAnimal = animals[i];
       }
     }
