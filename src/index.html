@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/lib/link-to.js"></script>
+  </head>
+<body>
+    <section id="welcome">
+        <div class="welcome__container col-lg-6 col-md-7 col-12">
+            <div class='text-center'>
+                <h2>Welcome to</h1>
+                <img class="welcome__logo mb-4" src="./img/logo.png">
+                <h5 class="welcome__headline">The first translation app that will help you communicate with your animal friends.</h5>
+            </div>
+            <button class="btn btn-lg btn-primary fs-5 px-5" data-bs-toggle="modal" data-bs-target="#animal-selection">I want to start translating stuff!</button>
+            <div class="welcome__sponsored">
+                <small>Sponsored by</small>
+                <img class="welcome__rotunda-logo" src="./img/rotunda-logo.png">
+            </div>   
+        </div>
+    </section>
+
+    <section id="animal-translation">
+        <div class="translation__container container col-lg-6 col-md-7 col-12">
+            
+                <div class="translation__animal">
+                    <h2>You selected: </h2>
+                    <span class="translation__animal-face"></span>
+                    <h1 class="translation__animal-name"></h1>
+                </div>
+                
+                <div class="translation__body">
+                    
+                    <div class="translation__input">
+                        <form class="translation__form">
+                            
+                                <label for="text-to-translate" class="form-label">Text to translate</label>
+                            
+                            <div class="input-group">
+                                <textarea class="form-control"  id="text-to-translate" aria-describedby="text-to-translate-help" aria-label="Text to translate"></textarea>
+                                <span class="input-group-text"><button type="submit" class="btn btn-primary translation__button"><img class="translation__send-icon" src="img/send.png"></button></span>  
+                            </div>
+                        </form>
+                    </div>
+                    <label for="translated-text" class="form-label">Translated Text</label>
+                    <div class="translation__output">
+                        
+                        <div id ="translated-text"> <i>No output yet.</i></div>
+                        
+                    </div>
+                </div> 
+            
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#animal-selection">Wanna try another animal?</button>
+        </div>
+    </section>
+    
+</body>
+
+<div class="modal fade" id="animal-selection" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Select your favourite animal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row gx-3 mb-3">
+                    <div class="col-4">
+                    <a class="animal-selection__link" data-bs-toggle="modal" data-bs-target="#animal-selection" onclick="linkTo('?animals=tiger')">
+                            <div class="card btn animal-selection__card">
+                                <div class="animal-selection__name"><h2>Tiger</h2></div>
+                                <div class="animal-selection__face">🐯</div>
+                                <div class="animal-selection__sound">Rawr!</div>
+                            </div>
+                    </a>
+                    </div>
+        
+                    <div class="col-4">
+                        <a class="animal-selection__link" data-bs-toggle="modal" data-bs-target="#animal-selection" onclick="linkTo('?animals=pig')">
+                            <div class="card btn animal-selection__card">
+                                <div class="animal-selection__name"><h2>Pig</h2></div>
+                                <div class="animal-selection__face">🐷</div>
+                                <div class="animal-selection__sound">Oink!</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="animal-selection__link" data-bs-toggle="modal" data-bs-target="#animal-selection" onclick="linkTo('?animals=frog')">
+                            <div class="card btn animal-selection__card">
+                                <div class="animal-selection__name"><h2>Frog</h2></div>
+                                <div class="animal-selection__face">🐸</div>
+                                <div class="animal-selection__sound">Ribbit!</div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="row gx-3 mb-3">
+                    <div class="col-4">
+                        <a class="animal-selection__link" data-bs-toggle="modal" data-bs-target="#animal-selection" onclick="linkTo('?animals=dog')">
+                            <div class="card btn animal-selection__card">
+                                <div class="animal-selection__name"><h2>Dog</h2></div>
+                                <div class="animal-selection__face">🐶</div>
+                                <div class="animal-selection__sound">Woof!</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="animal-selection__link" data-bs-toggle="modal" data-bs-target="#animal-selection" onclick="linkTo('?animals=cat')">
+                            <div class="card btn animal-selection__card">
+                                <div class="animal-selection__name"><h2>Cat</h2></div>
+                                <div class="animal-selection__face">🐱</div>
+                                <div class="animal-selection__sound">Meow!</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="animal-selection__link" data-bs-toggle="modal" data-bs-target="#animal-selection" onclick="linkTo('?animals=cow')">
+                            <div class="card btn animal-selection__card">
+                                <div class="animal-selection__name"><h2>Cow</h2></div>
+                                <div class="animal-selection__face">🐮</div>
+                                <div class="animal-selection__sound">Mooo!</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
