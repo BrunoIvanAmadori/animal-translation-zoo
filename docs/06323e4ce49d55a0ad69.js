@@ -1,0 +1,1 @@
+function linkTo(i){window.history.replaceState({},"",i)}
