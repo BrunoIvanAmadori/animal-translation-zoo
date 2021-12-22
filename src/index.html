@@ -8,14 +8,15 @@
     <section id="welcome">
         <div class="welcome__container col-lg-6 col-md-7 col-12">
             <div class='text-center'>
-                <h2>Welcome to</h1>
+                <h2 class="welcome__overtitle">Welcome to</h1>
                 <img class="welcome__logo mb-4" src="./img/logo.png">
                 <h5 class="welcome__headline">The first translation app that will help you communicate with your animal friends.</h5>
             </div>
-            <button class="btn btn-lg btn-primary fs-5 px-5" data-bs-toggle="modal" data-bs-target="#animal-selection">I want to start translating stuff!</button>
+            <button class="btn btn-lg btn-primary fs-5 px-5 text-white welcome__button" data-bs-toggle="modal" data-bs-target="#animal-selection">Yay! I want to try it!</button>
             <div class="welcome__sponsored">
-                <small>Sponsored by</small>
+                <small>Sponsored by </small>
                 <img class="welcome__rotunda-logo" src="./img/rotunda-logo.png">
+                
             </div>   
         </div>
     </section>
@@ -42,7 +43,7 @@
                             </div>
                         </form>
                     </div>
-                    <label for="translated-text" class="form-label">Translated Text</label>
+                    <label for="translated-text" class="form-label">Translated text</label>
                     <div class="translation__output">
                         
                         <div id ="translated-text"> <i>No output yet.</i></div>
@@ -50,7 +51,7 @@
                     </div>
                 </div> 
             
-            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#animal-selection">Wanna try another animal?</button>
+            <button class="btn btn-outline-primary text-white-hover" data-bs-toggle="modal" data-bs-target="#animal-selection">Wanna try another animal?</button>
         </div>
     </section>
     
@@ -60,7 +61,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Select your favourite animal</h5>
+                <h5 class="modal-title w-100 text-center">Select your favourite creature.</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -71,7 +72,7 @@
                             <div class="card btn animal-selection__card">
                                 <div class="animal-selection__name"><h2>Tiger</h2></div>
                                 <div class="animal-selection__face">🐯</div>
-                                <div class="animal-selection__sound">Rawr!</div>
+                                <div class="animal-selection__sound"><i>Rawr!</i></div>
                             </div>
                     </a>
                     </div>
@@ -81,7 +82,7 @@
                             <div class="card btn animal-selection__card">
                                 <div class="animal-selection__name"><h2>Pig</h2></div>
                                 <div class="animal-selection__face">🐷</div>
-                                <div class="animal-selection__sound">Oink!</div>
+                                <div class="animal-selection__sound"><i>Oink!</i></div>
                             </div>
                         </a>
                     </div>
@@ -90,7 +91,7 @@
                             <div class="card btn animal-selection__card">
                                 <div class="animal-selection__name"><h2>Frog</h2></div>
                                 <div class="animal-selection__face">🐸</div>
-                                <div class="animal-selection__sound">Ribbit!</div>
+                                <div class="animal-selection__sound"><i>Ribbit!</i></div>
                             </div>
                         </a>    
                     </div>
@@ -101,7 +102,7 @@
                             <div class="card btn animal-selection__card">
                                 <div class="animal-selection__name"><h2>Dog</h2></div>
                                 <div class="animal-selection__face">🐶</div>
-                                <div class="animal-selection__sound">Woof!</div>
+                                <div class="animal-selection__sound"><i>Woof!</i></div>
                             </div>
                         </a>
                     </div>
@@ -110,7 +111,7 @@
                             <div class="card btn animal-selection__card">
                                 <div class="animal-selection__name"><h2>Cat</h2></div>
                                 <div class="animal-selection__face">🐱</div>
-                                <div class="animal-selection__sound">Meow!</div>
+                                <div class="animal-selection__sound"><i>Meow!</i></div>
                             </div>
                         </a>
                     </div>
@@ -119,7 +120,7 @@
                             <div class="card btn animal-selection__card">
                                 <div class="animal-selection__name"><h2>Cow</h2></div>
                                 <div class="animal-selection__face">🐮</div>
-                                <div class="animal-selection__sound">Mooo!</div>
+                                <div class="animal-selection__sound"><i>Mooo!</i></div>
                             </div>
                         </a>
                     </div>
